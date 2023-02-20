@@ -24,6 +24,8 @@
 		DAD288A6295D375C00656BFB /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD288A5295D375C00656BFB /* ProfileView.swift */; };
 		DAD288A8295D377C00656BFB /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD288A7295D377C00656BFB /* UploadPostView.swift */; };
 		DAD288AA295D590B00656BFB /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD288A9295D590B00656BFB /* FeedCell.swift */; };
+		DAE0DE6C29A2F42F009937BE /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0DE6B29A2F42F009937BE /* UserStatView.swift */; };
+		DAE0DE6E29A2F8AC009937BE /* ProfileActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0DE6D29A2F8AC009937BE /* ProfileActionButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		DAD288A7295D377C00656BFB /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
 		DAD288A9295D590B00656BFB /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		DAD288AB295EB49800656BFB /* Instagram-Clone-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Instagram-Clone-Info.plist"; sourceTree = SOURCE_ROOT; };
+		DAE0DE6B29A2F42F009937BE /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
+		DAE0DE6D29A2F8AC009937BE /* ProfileActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,8 @@
 			children = (
 				DAD288A5295D375C00656BFB /* ProfileView.swift */,
 				DA05731A2970F25C008D8B6D /* ProfileHeaderView.swift */,
+				DAE0DE6B29A2F42F009937BE /* UserStatView.swift */,
+				DAE0DE6D29A2F8AC009937BE /* ProfileActionButtonView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -325,6 +331,8 @@
 				DAD288A2295D371400656BFB /* SearchView.swift in Sources */,
 				DAD288A0295D36E100656BFB /* FeedView.swift in Sources */,
 				DA057313296D8A0F008D8B6D /* PostGridView.swift in Sources */,
+				DAE0DE6E29A2F8AC009937BE /* ProfileActionButtonView.swift in Sources */,
+				DAE0DE6C29A2F42F009937BE /* UserStatView.swift in Sources */,
 				DAD2887E295D33EB00656BFB /* ContentView.swift in Sources */,
 				DAD2887C295D33EB00656BFB /* Instagram_CloneApp.swift in Sources */,
 				DAD2889E295D369E00656BFB /* MainTabView.swift in Sources */,
