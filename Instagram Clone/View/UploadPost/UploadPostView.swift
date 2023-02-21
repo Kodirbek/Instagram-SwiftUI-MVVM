@@ -12,6 +12,7 @@ struct UploadPostView: View {
   @State private var selectedImage: UIImage?
   @State var postImage: Image?
   @State var captionText = ""
+  @State var imagePickerPresented = false
   
   var body: some View {
     VStack(alignment: .center) {
@@ -19,13 +20,16 @@ struct UploadPostView: View {
       if postImage == nil {
         // Plus button
         Button {
-          // action
+          imagePickerPresented.toggle()
         } label: {
           VStack {
             Image(systemName: "plus").font(.title).padding(.bottom, 4)
             Text("Photo").font(.headline)
           }
         }
+        .sheet(isPresented: $imagePickerPresented, onDismiss: loadImage, content: {
+          ImagePicker(image: $selectedImage)
+        })
         .padding(30)
         .foregroundColor(.black)
         .overlay(
@@ -33,9 +37,9 @@ struct UploadPostView: View {
             .stroke(Color.black, lineWidth: 2)
         )
         .padding(.top, 56)
-      } else {
+      } else if let image = postImage {
         HStack(alignment: .top) {
-          Image("kodirbek")
+          image
             .resizable()
             .scaledToFill()
             .frame(width: 96, height: 96)
@@ -63,6 +67,13 @@ struct UploadPostView: View {
       
       
     }//: VStack
+  }
+}
+
+extension UploadPostView {
+  func loadImage() {
+    guard let selectedImage = selectedImage else { return }
+    postImage = Image(uiImage: selectedImage)
   }
 }
 
