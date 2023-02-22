@@ -27,6 +27,9 @@
 		DAE0DE6C29A2F42F009937BE /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0DE6B29A2F42F009937BE /* UserStatView.swift */; };
 		DAE0DE6E29A2F8AC009937BE /* ProfileActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0DE6D29A2F8AC009937BE /* ProfileActionButtonView.swift */; };
 		DAE0DE7229A43DDA009937BE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0DE7129A43DDA009937BE /* ImagePicker.swift */; };
+		DAE0DE7429A65A2A009937BE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0DE7329A65A2A009937BE /* LoginView.swift */; };
+		DAE0DE7629A65A45009937BE /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0DE7529A65A45009937BE /* RegistrationView.swift */; };
+		DAE0DE7829A65A57009937BE /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0DE7729A65A57009937BE /* ResetPasswordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		DAE0DE6B29A2F42F009937BE /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
 		DAE0DE6D29A2F8AC009937BE /* ProfileActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionButtonView.swift; sourceTree = "<group>"; };
 		DAE0DE7129A43DDA009937BE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		DAE0DE7329A65A2A009937BE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		DAE0DE7529A65A45009937BE /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		DAE0DE7729A65A57009937BE /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +225,9 @@
 		DAD28897295D35BC00656BFB /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				DAE0DE7329A65A2A009937BE /* LoginView.swift */,
+				DAE0DE7529A65A45009937BE /* RegistrationView.swift */,
+				DAE0DE7729A65A57009937BE /* ResetPasswordView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -334,6 +343,7 @@
 				DAD288A2295D371400656BFB /* SearchView.swift in Sources */,
 				DAD288A0295D36E100656BFB /* FeedView.swift in Sources */,
 				DA057313296D8A0F008D8B6D /* PostGridView.swift in Sources */,
+				DAE0DE7829A65A57009937BE /* ResetPasswordView.swift in Sources */,
 				DAE0DE7229A43DDA009937BE /* ImagePicker.swift in Sources */,
 				DAE0DE6E29A2F8AC009937BE /* ProfileActionButtonView.swift in Sources */,
 				DAE0DE6C29A2F42F009937BE /* UserStatView.swift in Sources */,
@@ -347,8 +357,10 @@
 				DA0573152970D210008D8B6D /* UserCell.swift in Sources */,
 				DA057311296D864F008D8B6D /* SearchBar.swift in Sources */,
 				DAD288A4295D372700656BFB /* NotificationsView.swift in Sources */,
+				DAE0DE7429A65A2A009937BE /* LoginView.swift in Sources */,
 				DAD288AA295D590B00656BFB /* FeedCell.swift in Sources */,
 				DA0573172970D21A008D8B6D /* UserListView.swift in Sources */,
+				DAE0DE7629A65A45009937BE /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
