@@ -30,6 +30,8 @@
 		DAE0DE7429A65A2A009937BE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0DE7329A65A2A009937BE /* LoginView.swift */; };
 		DAE0DE7629A65A45009937BE /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0DE7529A65A45009937BE /* RegistrationView.swift */; };
 		DAE0DE7829A65A57009937BE /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0DE7729A65A57009937BE /* ResetPasswordView.swift */; };
+		DAE0DE7A29A798D4009937BE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0DE7929A798D4009937BE /* CustomTextField.swift */; };
+		DAE0DE7C29A798E2009937BE /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0DE7B29A798E2009937BE /* CustomSecureField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		DAE0DE7329A65A2A009937BE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		DAE0DE7529A65A45009937BE /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		DAE0DE7729A65A57009937BE /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+		DAE0DE7929A798D4009937BE /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		DAE0DE7B29A798E2009937BE /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				DAE0DE7129A43DDA009937BE /* ImagePicker.swift */,
+				DAE0DE7929A798D4009937BE /* CustomTextField.swift */,
+				DAE0DE7B29A798E2009937BE /* CustomSecureField.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -352,12 +358,14 @@
 				DAD2889E295D369E00656BFB /* MainTabView.swift in Sources */,
 				DA0573192970EE1E008D8B6D /* NotificationCell.swift in Sources */,
 				DA05731B2970F25C008D8B6D /* ProfileHeaderView.swift in Sources */,
+				DAE0DE7A29A798D4009937BE /* CustomTextField.swift in Sources */,
 				DAD288A8295D377C00656BFB /* UploadPostView.swift in Sources */,
 				DAD288A6295D375C00656BFB /* ProfileView.swift in Sources */,
 				DA0573152970D210008D8B6D /* UserCell.swift in Sources */,
 				DA057311296D864F008D8B6D /* SearchBar.swift in Sources */,
 				DAD288A4295D372700656BFB /* NotificationsView.swift in Sources */,
 				DAE0DE7429A65A2A009937BE /* LoginView.swift in Sources */,
+				DAE0DE7C29A798E2009937BE /* CustomSecureField.swift in Sources */,
 				DAD288AA295D590B00656BFB /* FeedCell.swift in Sources */,
 				DA0573172970D21A008D8B6D /* UserListView.swift in Sources */,
 				DAE0DE7629A65A45009937BE /* RegistrationView.swift in Sources */,
