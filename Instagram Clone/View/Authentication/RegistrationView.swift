@@ -13,6 +13,9 @@ struct RegistrationView: View {
   @State private var fullname = ""
   @State private var username = ""
   @State private var password = ""
+  @State private var selectedImage: UIImage?
+  @State private var postImage: Image?
+  @State var imagePickerPresented = false
   @Environment(\.dismiss) var dismiss
   @FocusState private var keyboardIsFocused: Bool
   
@@ -27,18 +30,44 @@ struct RegistrationView: View {
       
       VStack {
         
-        // PLUS BUTTON
-        VStack {
-          Image(systemName: "plus").font(.title).padding(.bottom, 4)
-          Text("Photo").font(.system(size: 28))
+        // PLUS BUTTON / SELECTED IMAGE
+        if postImage == nil {
+          
+          // Plus button
+          Button {
+            imagePickerPresented.toggle()
+          } label: {
+            VStack {
+              Image(systemName: "plus")
+                .font(.title)
+                .padding(.bottom, 4)
+              Text("Photo")
+                .font(.system(size: 18, weight: .semibold))
+            }
+            .padding(40)
+            .foregroundColor(.white)
+            .overlay(
+              Circle()
+                .stroke(Color.white, lineWidth: 1.5)
+            )
+          }
+          .padding(.top, 25)
+          .sheet(isPresented: $imagePickerPresented) {
+            loadImage()
+          } content: {
+            ImagePicker(image: $selectedImage)
+          }
+          
+        } else if let image = postImage {
+          
+          // Image
+          image
+            .resizable()
+            .scaledToFill()
+            .frame(width: 140, height: 140)
+            .clipShape(Circle())
+            .padding(.top, 25)
         }
-        .padding(30)
-        .foregroundColor(.white)
-        .overlay(
-          Circle()
-            .stroke(Color.white, lineWidth: 1.5)
-        )
-        .padding(.top, 20)
         
         // TEXT FIELDS
         VStack(spacing: 20) {
@@ -60,7 +89,7 @@ struct RegistrationView: View {
         }
         .padding(.top, 30)
         
-        // SIGN IN
+        // SIGN UP
         Button {
           keyboardIsFocused = false
         } label: {
@@ -76,7 +105,7 @@ struct RegistrationView: View {
         
         Spacer()
         
-        // SIGN UP
+        // SIGN IN
         HStack {
           Text("Already have an account?")
             .font(.system(size: 14, weight: .semibold))
@@ -93,6 +122,13 @@ struct RegistrationView: View {
         .padding(.bottom, 25)
       } //: VStack
     }
+  }
+}
+
+extension RegistrationView {
+  func loadImage() {
+    guard let selectedImage = selectedImage else { return }
+    postImage = Image(uiImage: selectedImage)
   }
 }
 
