@@ -24,7 +24,7 @@ struct UploadPostView: View {
         } label: {
           VStack {
             Image(systemName: "plus").font(.title).padding(.bottom, 4)
-            Text("Photo").font(.headline)
+            Text("Photo").font(.system(size: 28))
           }
         }
         .sheet(isPresented: $imagePickerPresented, onDismiss: loadImage, content: {

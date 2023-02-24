@@ -32,6 +32,7 @@
 		DAE0DE7829A65A57009937BE /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0DE7729A65A57009937BE /* ResetPasswordView.swift */; };
 		DAE0DE7A29A798D4009937BE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0DE7929A798D4009937BE /* CustomTextField.swift */; };
 		DAE0DE7C29A798E2009937BE /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0DE7B29A798E2009937BE /* CustomSecureField.swift */; };
+		DAE0DE7E29A88641009937BE /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0DE7D29A88641009937BE /* TextFieldModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		DAE0DE7729A65A57009937BE /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 		DAE0DE7929A798D4009937BE /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		DAE0DE7B29A798E2009937BE /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
+		DAE0DE7D29A88641009937BE /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				DAE0DE7129A43DDA009937BE /* ImagePicker.swift */,
 				DAE0DE7929A798D4009937BE /* CustomTextField.swift */,
 				DAE0DE7B29A798E2009937BE /* CustomSecureField.swift */,
+				DAE0DE7D29A88641009937BE /* TextFieldModifier.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				DA0573152970D210008D8B6D /* UserCell.swift in Sources */,
 				DA057311296D864F008D8B6D /* SearchBar.swift in Sources */,
 				DAD288A4295D372700656BFB /* NotificationsView.swift in Sources */,
+				DAE0DE7E29A88641009937BE /* TextFieldModifier.swift in Sources */,
 				DAE0DE7429A65A2A009937BE /* LoginView.swift in Sources */,
 				DAE0DE7C29A798E2009937BE /* CustomSecureField.swift in Sources */,
 				DAD288AA295D590B00656BFB /* FeedCell.swift in Sources */,

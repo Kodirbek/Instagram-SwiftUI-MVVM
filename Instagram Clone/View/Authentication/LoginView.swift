@@ -11,57 +11,56 @@ struct LoginView: View {
   
   @State private var email = ""
   @State private var password = ""
+  @FocusState private var keyboardIsFocused: Bool
   
   var body: some View {
     NavigationView {
       ZStack {
         LinearGradient(gradient: Gradient(colors: [.purple, .blue]), startPoint: .top, endPoint: .bottom)
           .ignoresSafeArea()
+          .onTapGesture {
+            keyboardIsFocused = false
+          }
         
         VStack {
+          
+          // INSTAGRAM LOGO
           Image("instagram")
             .resizable()
             .scaledToFit()
             .frame(width: 220, height: 100)
             .padding(.top, 40)
           
-          // email field
+          // EMAIL & PASSWORD FIELD
           VStack(spacing: 20) {
             CustomTextField(text: $email, placeholder: Text("Email"), imageName: "envelope")
-              .padding()
-              .background(Color(.init(white: 1, alpha: 0.15)))
-              .cornerRadius(10)
-              .foregroundColor(.white)
-              .padding(.horizontal, 32)
+              .modifier(TextFieldModifier())
+              .focused($keyboardIsFocused)
             
-            // password field
             CustomSecureField(text: $password, placeholder: Text("Password"))
-              .padding()
-              .background(Color(.init(white: 1, alpha: 0.15)))
-              .cornerRadius(10)
-              .foregroundColor(.white)
-              .padding(.horizontal, 32)
+              .modifier(TextFieldModifier())
+              .focused($keyboardIsFocused)
           }
-          .padding(.top, 50)
+          .padding(.top, 30)
           
-          // forgot password
+          // FORGOT PASSWORD
           HStack {
             Spacer()
             
             Button {
-              // some action
+              keyboardIsFocused = false
             } label: {
               Text("Forgot Password?")
-                .font(.system(size: 13, weight: .semibold))
+                .font(.system(size: 13, weight: .bold))
                 .foregroundColor(.white)
                 .padding(.top)
                 .padding(.trailing, 32)
             }
           } //: HStack
           
-          // sign in
+          // SIGN IN
           Button {
-            // some action
+            keyboardIsFocused = false
           } label: {
             Text("Sign In")
               .font(.headline)
@@ -73,22 +72,25 @@ struct LoginView: View {
           }
           
           Spacer()
-
-          // go to sign in
+          
+          // SIGN UP
           HStack {
             Text("Don't have an account?")
               .font(.system(size: 14, weight: .semibold))
             
-            Button {
-              // Sign up action
+            NavigationLink {
+              RegistrationView()
+                .navigationBarBackButtonHidden(true)
             } label: {
               Text("Sign Up")
                 .font(.system(size: 14, weight: .bold))
             }
+            .simultaneousGesture(TapGesture().onEnded({
+              keyboardIsFocused = false
+            }))
           } //: HStack
           .foregroundColor(.white)
           .padding(.bottom, 25)
-
         } //: VStack
       } //: ZStack
     } //: NavigationView
