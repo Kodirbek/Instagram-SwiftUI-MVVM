@@ -13,6 +13,7 @@
 		DA0573172970D21A008D8B6D /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0573162970D21A008D8B6D /* UserListView.swift */; };
 		DA0573192970EE1E008D8B6D /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0573182970EE1E008D8B6D /* NotificationCell.swift */; };
 		DA05731B2970F25C008D8B6D /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA05731A2970F25C008D8B6D /* ProfileHeaderView.swift */; };
+		DA85352129ABA5B400BA874C /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85352029ABA5B400BA874C /* AuthViewModel.swift */; };
 		DA88C79929AA4D5100FCD8A1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DA88C79829AA4D5100FCD8A1 /* FirebaseAuth */; };
 		DA88C79B29AA4D5100FCD8A1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DA88C79A29AA4D5100FCD8A1 /* FirebaseFirestore */; };
 		DA88C79D29AA4D5100FCD8A1 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = DA88C79C29AA4D5100FCD8A1 /* FirebaseFunctions */; };
@@ -49,6 +50,7 @@
 		DA0573162970D21A008D8B6D /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		DA0573182970EE1E008D8B6D /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		DA05731A2970F25C008D8B6D /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		DA85352029ABA5B400BA874C /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		DA88C7A529AA51DA00FCD8A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DAD28878295D33EB00656BFB /* Instagram Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instagram Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD2887B295D33EB00656BFB /* Instagram_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instagram_CloneApp.swift; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 		DAD2889B295D360700656BFB /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				DA85352029ABA5B400BA874C /* AuthViewModel.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				DAD288A4295D372700656BFB /* NotificationsView.swift in Sources */,
 				DAE0DE7E29A88641009937BE /* TextFieldModifier.swift in Sources */,
 				DAE0DE7429A65A2A009937BE /* LoginView.swift in Sources */,
+				DA85352129ABA5B400BA874C /* AuthViewModel.swift in Sources */,
 				DAE0DE7C29A798E2009937BE /* CustomSecureField.swift in Sources */,
 				DAD288AA295D590B00656BFB /* FeedCell.swift in Sources */,
 				DA0573172970D21A008D8B6D /* UserListView.swift in Sources */,
