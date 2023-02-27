@@ -18,6 +18,7 @@ struct RegistrationView: View {
   @State var imagePickerPresented = false
   @Environment(\.dismiss) var dismiss
   @FocusState private var keyboardIsFocused: Bool
+  @EnvironmentObject var viewModel: AuthViewModel
   
   var body: some View {
     
@@ -92,6 +93,7 @@ struct RegistrationView: View {
         // SIGN UP
         Button {
           keyboardIsFocused = false
+          viewModel.register()
         } label: {
           Text("Sign Up")
             .font(.headline)

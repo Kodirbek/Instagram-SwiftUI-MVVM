@@ -11,14 +11,18 @@ import Firebase
 class AuthViewModel: ObservableObject {
   
   func login() {
-    
+    print("Login")
   }
   
   func register() {
-    
+    print("Register")
   }
   
   func signOut() {
+    
+  }
+  
+  func resetPassword() {
     
   }
   
